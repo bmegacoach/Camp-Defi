@@ -1,0 +1,1 @@
+export { CollaborativeLab } from './CollaborativeLabNew'

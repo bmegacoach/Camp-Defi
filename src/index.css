@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* CAMP Elite Color System */
+    --camp-royal-900: 30 58 138;
+    --camp-royal-600: 37 99 235;
+    --camp-royal-500: 59 130 246;
+    --camp-silver-200: 229 231 235;
+    --camp-dark: 15 23 42;
+    
+    /* Shadcn/ui variables mapped to CAMP colors */
+    --background: 15 23 42; /* camp-dark */
+    --foreground: 248 250 252; /* white */
+    --card: 30 41 59; /* camp-dark-light */
+    --card-foreground: 248 250 252;
+    --popover: 30 41 59;
+    --popover-foreground: 248 250 252;
+    --primary: 30 58 138; /* camp-royal-900 */
+    --primary-foreground: 248 250 252;
+    --secondary: 51 65 85; /* camp-dark-medium */
+    --secondary-foreground: 248 250 252;
+    --muted: 51 65 85;
+    --muted-foreground: 156 163 175; /* camp-silver-400 */
+    --accent: 59 130 246; /* camp-royal-500 */
+    --accent-foreground: 15 23 42;
+    --destructive: 239 68 68;
+    --destructive-foreground: 248 250 252;
+    --border: 51 65 85; /* camp-dark-medium */
+    --input: 30 41 59;
+    --ring: 59 130 246; /* camp-royal-500 */
+    --radius: 0.75rem;
+    
+    /* Sidebar variables for CAMP theme */
+    --sidebar-background: 15 23 42;
+    --sidebar-foreground: 248 250 252;
+    --sidebar-primary: 30 58 138;
+    --sidebar-primary-foreground: 248 250 252;
+    --sidebar-accent: 30 41 59;
+    --sidebar-accent-foreground: 248 250 252;
+    --sidebar-border: 51 65 85;
+    --sidebar-ring: 59 130 246;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-camp-dark text-white font-body;
+    @apply antialiased;
+  }
+  
+  img {
+    object-position: top;
+  }
+  
+  /* Custom scrollbar for webkit browsers */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-camp-dark-light;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-camp-silver-600 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-camp-royal-600;
+  }
+}
+
+@layer components {
+  /* CAMP Elite Button System */
+  .btn-primary {
+    @apply bg-gradient-button-primary text-white border border-transparent;
+    @apply rounded-xl px-8 py-4 text-base font-semibold;
+    @apply transition-all duration-300 ease-out;
+    @apply transform translate-y-0 shadow-royal;
+    @apply hover:bg-gradient-button-hover hover:-translate-y-1;
+    @apply hover:shadow-[0_12px_32px_rgba(30,58,138,0.4)];
+    @apply active:translate-y-0 active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent text-camp-silver-200 border-2 border-camp-silver-400;
+    @apply rounded-xl px-7 py-3.5 text-base font-medium;
+    @apply transition-all duration-300 ease-out;
+    @apply hover:bg-camp-silver-200 hover:text-camp-dark hover:border-camp-silver-200;
+  }
+  
+  .btn-ghost {
+    @apply bg-camp-silver-200/10 text-camp-silver-200 border border-camp-silver-200/20;
+    @apply rounded-lg px-6 py-3 text-sm font-medium;
+    @apply transition-all duration-200 ease-out;
+    @apply hover:bg-camp-silver-200/20 hover:border-camp-silver-200/30;
+  }
+  
+  /* CAMP Elite Card System */
+  .card-primary {
+    @apply bg-gradient-card-elevated border border-camp-silver-200/10;
+    @apply rounded-2xl p-8 glass-effect;
+    @apply transition-all duration-300 ease-out;
+    @apply relative overflow-hidden;
+    @apply hover:-translate-y-1 hover:shadow-strong hover:border-camp-royal-500/30;
+  }
+  
+  .card-primary::before {
+    content: '';
+    @apply absolute top-0 left-0 right-0 h-px;
+    @apply bg-gradient-royal-secondary opacity-50;
+  }
+  
+  .card-stats {
+    @apply bg-camp-dark-light/80 border border-camp-royal-500/20;
+    @apply rounded-xl p-6 text-center;
+    @apply transition-all duration-300 ease-out;
+    @apply hover:border-camp-royal-500/40 hover:bg-camp-dark-light/90;
+  }
+  
+  /* Layout System */
+  .container-xl {
+    @apply max-w-7xl mx-auto px-6;
+  }
+  
+  .container-lg {
+    @apply max-w-6xl mx-auto px-6;
+  }
+  
+  .container-md {
+    @apply max-w-4xl mx-auto px-5;
+  }
+  
+  .section-xl {
+    @apply py-32;
+  }
+  
+  .section-lg {
+    @apply py-24;
+  }
+  
+  .section-md {
+    @apply py-18;
+  }
+  
+  .section-sm {
+    @apply py-12;
+  }
+  
+  /* Professional Text Styles */
+  .text-display {
+    @apply font-display font-bold text-display-xl;
+    @apply bg-gradient-to-r from-white to-camp-silver-300 bg-clip-text text-transparent;
+  }
+  
+  .text-headline {
+    @apply font-display font-semibold text-3xl;
+    @apply text-white;
+  }
+  
+  .text-body-large {
+    @apply font-body text-lg text-camp-silver-300 leading-relaxed;
+  }
+  
+  .text-body {
+    @apply font-body text-base text-camp-silver-400 leading-normal;
+  }
+  
+  /* Loading States */
+  .skeleton {
+    @apply animate-pulse bg-camp-silver-600/20 rounded;
+  }
+  
+  /* Navigation */
+  .nav-item {
+    @apply flex items-center px-4 py-3 rounded-xl text-camp-silver-300;
+    @apply transition-all duration-200 ease-out;
+    @apply hover:bg-camp-royal-500/10 hover:text-white;
+    @apply group;
+  }
+  
+  .nav-item.active {
+    @apply bg-camp-royal-500/20 text-white border border-camp-royal-500/30;
+  }
+  
+  /* Form Controls */
+  .input-field {
+    @apply w-full px-4 py-3 bg-camp-dark-light border border-camp-silver-600;
+    @apply rounded-xl text-white placeholder-camp-silver-500;
+    @apply transition-all duration-200 ease-out;
+    @apply focus:outline-none focus:ring-2 focus:ring-camp-royal-500 focus:border-transparent;
+  }
+  
+  /* Charts and Data Visualization */
+  .chart-container {
+    @apply bg-camp-dark-light/50 border border-camp-silver-600/20;
+    @apply rounded-xl p-6 glass-effect;
+  }
+}
+
+@layer utilities {
+  /* Responsive breakpoints */
+  @screen md {
+    .grid-responsive {
+      @apply grid-cols-2;
+    }
+  }
+  
+  @screen lg {
+    .grid-responsive {
+      @apply grid-cols-3;
+    }
+  }
+  
+  @screen xl {
+    .grid-responsive {
+      @apply grid-cols-4;
+    }
+  }
+  
+  /* Smooth transitions */
+  .transition-smooth {
+    @apply transition-all duration-300 cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .transition-quick {
+    @apply transition-all duration-150 ease-out;
+  }
+  
+  .transition-slow {
+    @apply transition-all duration-500 ease-out;
+  }
+}
+
+/* Professional animations */
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 20%,
+    rgba(255, 255, 255, 0.5) 60%,
+    rgba(255, 255, 255, 0)
+  );
+  background-size: 200px 100%;
+  animation: shimmer 2s infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
