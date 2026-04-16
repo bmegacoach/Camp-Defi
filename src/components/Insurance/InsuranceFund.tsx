@@ -18,5 +18,6 @@ const coverageTypes = [
   { id: 'governance-attacks', title: 'Governance Attacks', description: 'Defense against malicious governance proposals and voting attacks', coverage: '100%', icon: Award, color: 'green' },
 ]
 
-const staticMetrics = { claimsProcessed: 23, avgClaimTime: '4.2 hours', successRate: '99.7%' }
+// Protocol Protection Reserve — provided by Goldbackbond for investor protection, not a yield source for CAMP
+const staticMetrics = { fundStatus: 'Active', provider: 'Goldbackbond', purpose: 'Protocol Protection' }
 

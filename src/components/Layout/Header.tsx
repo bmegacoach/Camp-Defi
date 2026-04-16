@@ -61,7 +61,7 @@ export function Header({ currentView, walletConnected, walletAddress, onConnectW
             </motion.div>
             <div>
               <h1 className="text-2xl font-display font-semibold text-white">
-                {viewTitles[currentView as keyof typeof viewTitles] || 'CAMP Elite'}
+                {viewTitles[currentView as keyof typeof viewTitles] || 'CAMP Finance'}
               </h1>
               <div className="flex items-center space-x-2">
                 <Shield className="w-3 h-3 text-cyan-400" />
@@ -91,7 +91,7 @@ export function Header({ currentView, walletConnected, walletAddress, onConnectW
           <div className="flex items-center space-x-2 px-3 py-2 bg-camp-dark-light/50 rounded-lg border border-camp-silver-600/20">
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
             <Globe className="w-4 h-4 text-camp-silver-400" />
-            <span className="text-sm text-camp-silver-300">Ethereum</span>
+            <span className="text-sm text-camp-silver-300">Base</span>
           </div>
 
           {/* Notifications */}

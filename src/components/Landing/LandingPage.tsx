@@ -37,7 +37,7 @@ const stats = [
   { value: '$1,000,000,000', label: 'Insurance Fund', icon: Shield, color: 'cyan' },
   { value: '$24.8M', label: 'USDca Supply', icon: DollarSign, color: 'green' },
   { value: '10.42%', label: 'Average APY', icon: TrendingUp, color: 'purple' },
-  { value: '19', label: 'Active Strategies', icon: Target, color: 'blue' },
+  { value: '147', label: 'Active Strategies', icon: Target, color: 'blue' },
 ]
 
 const ecosystemPartners = [
@@ -161,12 +161,12 @@ export function LandingPage({ onLaunchApp, onConnectWallet, onLearnMore }: Landi
                   CAMP
                 </span>
                 <br />
-                <span className="text-white">Elite DeFi</span>
+                <span className="text-white">Finance</span>
               </h1>
               <p className="text-xl md:text-2xl text-camp-silver-300 max-w-3xl mx-auto leading-relaxed">
-                The Future of Decentralized Finance: Multi-collateral stablecoin protocol with{' '}
-                <span className="text-cyan-400 font-semibold">AI-powered collaboration</span> and{' '}
-                <span className="text-green-400 font-semibold">1 Billion USD insurance protection</span>
+                Your gateway to the CAMP ecosystem. Mint USDca, access AI-guided DeFi strategies, and participate in{' '}
+                <span className="text-cyan-400 font-semibold">protocol-protected finance</span> built for{' '}
+                <span className="text-green-400 font-semibold">Main Street.</span>
               </p>
             </motion.div>
 
@@ -225,7 +225,7 @@ export function LandingPage({ onLaunchApp, onConnectWallet, onLearnMore }: Landi
                 className="px-8 py-4"
               >
                 <Zap className="w-5 h-5 mr-2" />
-                Launch CAMP Elite
+                Launch CAMP Finance
               </FuturisticButton>
               
               <FuturisticButton
@@ -237,7 +237,7 @@ export function LandingPage({ onLaunchApp, onConnectWallet, onLearnMore }: Landi
                 className="px-8 py-4"
               >
                 <DollarSign className="w-5 h-5 mr-2" />
-                Start Earning USDca
+                Mint USDca
               </FuturisticButton>
             </motion.div>
 
@@ -276,14 +276,14 @@ export function LandingPage({ onLaunchApp, onConnectWallet, onLearnMore }: Landi
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-6xl font-display font-bold text-white mb-6">
-              The Evolution of{' '}
+              DeFi Built for{' '}
               <span className="bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">
-                Internet Money
+                Main Street
               </span>
             </h2>
             <p className="text-xl text-camp-silver-300 max-w-4xl mx-auto">
-              CAMP Elite represents the next generation of decentralized finance, combining multi-collateral stability,
-              AI-powered optimization, and institutional-grade security in one comprehensive ecosystem.
+              CAMP Finance is the DeFi arm of the CAMP ecosystem — a protected, AI-guided gateway for minting USDca,
+              participating in governance, and accessing decentralized finance built for everyday participants.
             </p>
           </motion.div>
 
@@ -361,20 +361,20 @@ export function LandingPage({ onLaunchApp, onConnectWallet, onLearnMore }: Landi
                   
                   <div className="grid grid-cols-2 gap-4 text-center">
                     <div>
-                      <div className="text-2xl font-bold text-cyan-400">733K+</div>
-                      <div className="text-sm text-camp-silver-400">Active Users</div>
+                      <div className="text-2xl font-bold text-cyan-400">Base</div>
+                      <div className="text-sm text-camp-silver-400">Primary Network</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-green-400">24</div>
-                      <div className="text-sm text-camp-silver-400">Supported Chains</div>
+                      <div className="text-2xl font-bold text-green-400">$1B</div>
+                      <div className="text-sm text-camp-silver-400">Protocol Protection</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-purple-400">99.7%</div>
-                      <div className="text-sm text-camp-silver-400">Success Rate</div>
+                      <div className="text-2xl font-bold text-purple-400">100%</div>
+                      <div className="text-sm text-camp-silver-400">Smart Contract Coverage</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-blue-400">4.2h</div>
-                      <div className="text-sm text-camp-silver-400">Avg Processing</div>
+                      <div className="text-2xl font-bold text-blue-400">Multi</div>
+                      <div className="text-sm text-camp-silver-400">Collateral Supported</div>
                     </div>
                   </div>
                 </HologramCard>
@@ -401,7 +401,7 @@ export function LandingPage({ onLaunchApp, onConnectWallet, onLearnMore }: Landi
               </span>
             </h2>
             <p className="text-xl text-camp-silver-300 max-w-3xl mx-auto">
-              From individual traders to institutional investors, CAMP Elite provides comprehensive solutions
+              From individual participants to institutional investors, CAMP Finance provides comprehensive solutions
               for the entire DeFi ecosystem.
             </p>
           </motion.div>
@@ -522,8 +522,7 @@ export function LandingPage({ onLaunchApp, onConnectWallet, onLearnMore }: Landi
                     <span className="text-green-400 font-semibold">Insurance Fund Status: Active</span>
                   </div>
                   <p className="text-sm text-camp-silver-300">
-                    All ecosystem participants are protected by our comprehensive 1 Billion USD insurance fund,
-                    backed by GOLDBACKBOND securities.
+                    The Camp Insurance Fund is provided by Goldbackbond — a Protocol Protection Reserve for all CAMP ecosystem participants. This is investor protection, not yield.
                   </p>
                 </div>
               </HologramCard>
@@ -694,7 +693,7 @@ export function LandingPage({ onLaunchApp, onConnectWallet, onLearnMore }: Landi
               </span>
             </h2>
             <p className="text-xl text-camp-silver-300 max-w-3xl mx-auto mb-12">
-              Join thousands of users already earning with CAMP Elite's revolutionary approach to decentralized finance.
+              Join the CAMP ecosystem — the protected, AI-guided path to decentralized finance for Main Street participants.
             </p>
 
             <div className="flex justify-center items-center mb-12">
@@ -707,7 +706,7 @@ export function LandingPage({ onLaunchApp, onConnectWallet, onLearnMore }: Landi
                 className="px-12 py-6"
               >
                 <Sparkles className="w-6 h-6 mr-3" />
-                Launch CAMP Elite
+                Launch CAMP Finance
               </FuturisticButton>
             </div>
 
@@ -747,19 +746,27 @@ export function LandingPage({ onLaunchApp, onConnectWallet, onLearnMore }: Landi
               >
                 <Cpu className="w-4 h-4 text-white" />
               </motion.div>
-              <span className="font-display font-bold text-white">CAMP Elite</span>
+              <span className="font-display font-bold text-white">CAMP Finance</span>
             </div>
             
-            <div className="flex items-center space-x-6 text-sm text-camp-silver-400">
-              <a href="#" className="hover:text-white transition-colors">Documentation</a>
-              <a href="#" className="hover:text-white transition-colors">Security</a>
-              <a href="#" className="hover:text-white transition-colors">Terms</a>
-              <a href="#" className="hover:text-white transition-colors">Privacy</a>
+            <div className="flex flex-col items-end space-y-2">
+              <div className="flex items-center space-x-6 text-sm text-camp-silver-400 mb-1">
+                <span className="text-camp-silver-500 text-xs uppercase tracking-wider">CAMP Ecosystem</span>
+                <a href="https://coachai-camp-ecosystem.web.app" className="hover:text-cyan-400 transition-colors">CAMP Hub</a>
+                <a href="https://openchief.ai" className="hover:text-cyan-400 transition-colors">OpenChief.ai</a>
+                <a href="https://helpmecoach.ai" className="hover:text-cyan-400 transition-colors">HelpMeCoach.ai</a>
+              </div>
+              <div className="flex items-center space-x-6 text-sm text-camp-silver-400">
+                <a href="#" className="hover:text-white transition-colors">Documentation</a>
+                <a href="#" className="hover:text-white transition-colors">Security</a>
+                <a href="#" className="hover:text-white transition-colors">Terms</a>
+                <a href="#" className="hover:text-white transition-colors">Privacy</a>
+              </div>
             </div>
           </div>
           
           <div className="mt-8 pt-8 border-t border-camp-silver-600/20 text-center text-sm text-camp-silver-500">
-            © 2025 CAMP Elite. All rights reserved. Building the future of decentralized finance.
+            © 2026 CAMP Finance. All rights reserved. Building the future of decentralized finance.
           </div>
         </div>
       </footer>
