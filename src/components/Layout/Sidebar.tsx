@@ -48,7 +48,7 @@ const navigationItems = [
     id: 'insurance',
     label: 'Insurance Fund',
     icon: Shield,
-    description: '1B USD protection',
+    description: '$100M protection',
     badge: 'PROTECTED',
   },
   {
@@ -143,7 +143,7 @@ export function Sidebar({ activeView, onViewChange, isCollapsed, onToggleCollaps
               <h1 className="font-display font-bold text-xl text-white">CAMP</h1>
               <div className="flex items-center space-x-1">
                 <Shield className="w-3 h-3 text-cyan-400" />
-                <p className="text-xs text-cyan-300">1B Protected</p>
+                <p className="text-xs text-cyan-300">$100M Protected</p>
               </div>
             </div>
           )}

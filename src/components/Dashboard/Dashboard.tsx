@@ -225,7 +225,7 @@ export function Dashboard({ walletAddress }: DashboardProps) {
             </div>
             <h3 className="text-sm font-medium text-camp-silver-400 mb-1">Insurance Fund</h3>
             <p className="text-2xl font-bold text-cyan-300">
-              $1,000,000,000
+              $100,000,000
             </p>
             <div className="flex items-center mt-2">
               <Database className="w-4 h-4 text-cyan-400 mr-1" />
@@ -495,12 +495,12 @@ export function Dashboard({ walletAddress }: DashboardProps) {
               <Shield className="w-6 h-6 text-cyan-400" />
             </div>
             <div>
-              <h4 className="font-semibold text-white">1B Insurance Fund</h4>
+              <h4 className="font-semibold text-white">$100M Insurance Fund</h4>
               <p className="text-sm text-cyan-300">GOLDBACKBOND Protected</p>
             </div>
           </div>
           <p className="text-camp-silver-300 text-sm mb-4">
-            Your assets are protected by our comprehensive 1 Billion USD insurance fund covering smart contract risks, oracle failures, and market volatility.
+            Your assets are protected by our comprehensive $100M insurance fund covering smart contract risks, oracle failures, and market volatility.
           </p>
           <FuturisticButton
             variant="ghost"

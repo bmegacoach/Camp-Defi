@@ -356,7 +356,7 @@ export const CAMP_KNOWLEDGE: CampKnowledge = {
   },
   insurance: {
     fund: {
-      size: "1 Billion USD Insurance Fund",
+      size: "$100M USD Insurance Fund",
       purpose: "Comprehensive protection for CAMP ecosystem users and protocol operations",
       management: "Controlled by Gnosis Safe Multisig with DEFAULT_ADMIN_ROLE",
       token: "GOLDBACKBOND - Gold-backed insurance fund token"

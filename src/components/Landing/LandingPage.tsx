@@ -34,7 +34,7 @@ interface LandingPageProps {
 }
 
 const stats = [
-  { value: '$1,000,000,000', label: 'Insurance Fund', icon: Shield, color: 'cyan' },
+  { value: '$100,000,000', label: 'Insurance Fund', icon: Shield, color: 'cyan' },
   { value: '$24.8M', label: 'USDca Supply', icon: DollarSign, color: 'green' },
   { value: '10.42%', label: 'Average APY', icon: TrendingUp, color: 'purple' },
   { value: '147', label: 'Active Strategies', icon: Target, color: 'blue' },
@@ -69,7 +69,7 @@ const useCases = [
   {
     title: 'Institutional Solutions',
     description: 'Enterprise-grade infrastructure with comprehensive insurance coverage and compliance tools.',
-    features: ['1B insurance protection', 'Regulatory compliance', 'Enterprise APIs'],
+    features: ['$100M insurance protection', 'Regulatory compliance', 'Enterprise APIs'],
     partners: ['GOLDBACKBOND', 'Institutional Custody', 'Compliance Suite'],
     icon: Award,
     color: 'blue',
@@ -110,7 +110,7 @@ export function LandingPage({ onLaunchApp, onConnectWallet, onLearnMore }: Landi
           <div className="flex items-center justify-center space-x-4 text-sm">
             <Shield className="w-4 h-4 text-cyan-400" />
             <span className="text-white">
-              <strong>NEW:</strong> 1 Billion USD Insurance Fund now active - protecting all CAMP ecosystem participants
+              <strong>NEW:</strong> $100M Insurance Fund now active - protecting all CAMP ecosystem participants
             </span>
             <FuturisticButton variant="ghost" size="sm" onClick={onLearnMore}>
               Learn More <ArrowRight className="w-3 h-3 ml-1" />
@@ -315,7 +315,7 @@ export function LandingPage({ onLaunchApp, onConnectWallet, onLearnMore }: Landi
                       <Shield className="w-6 h-6 text-green-400" />
                     </div>
                     <div className="flex-1">
-                      <h4 className="font-semibold text-white mb-1">1B Insurance Protection</h4>
+                      <h4 className="font-semibold text-white mb-1">$100M Insurance Protection</h4>
                       <p className="text-camp-silver-400 text-sm">GOLDBACKBOND-secured comprehensive coverage for all ecosystem risks</p>
                     </div>
                   </div>
@@ -365,7 +365,7 @@ export function LandingPage({ onLaunchApp, onConnectWallet, onLearnMore }: Landi
                       <div className="text-sm text-camp-silver-400">Primary Network</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-green-400">$1B</div>
+                      <div className="text-2xl font-bold text-green-400">$100M</div>
                       <div className="text-sm text-camp-silver-400">Protocol Protection</div>
                     </div>
                     <div>

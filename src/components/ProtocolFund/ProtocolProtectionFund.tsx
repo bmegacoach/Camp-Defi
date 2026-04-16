@@ -166,7 +166,7 @@ export function ProtocolProtectionFund({ onBack }: ProtocolProtectionFundProps) 
             <div className="flex items-center justify-center space-x-4 mb-4">
               <Award className="w-8 h-8 text-cyan-400" />
               <div className="text-center">
-                <div className="text-3xl font-bold text-white">$1,000,000,000</div>
+                <div className="text-3xl font-bold text-white">$100,000,000</div>
                 <div className="text-cyan-400 font-semibold">Protection Fund Allocation</div>
               </div>
             </div>
@@ -189,7 +189,7 @@ export function ProtocolProtectionFund({ onBack }: ProtocolProtectionFundProps) 
                 health and stability of the CAMP ecosystem against unforeseen, systemic market events.
               </p>
               <p>
-                The Protocol Protection Fund is a discretionary capital backstop, capitalized by a $1 Billion allocation from the 
+                The Protocol Protection Fund is a discretionary capital backstop, capitalized by a $100M allocation from the
                 Goldbackbond Inc. corporate treasury. Its sole purpose is to provide a stabilization and recapitalization resource 
                 in the event of a "black swan" event, such as a critical smart contract exploit on a core protocol dependency or 
                 an extreme market dislocation that threatens the solvency of the CAMP ecosystem.

@@ -125,7 +125,7 @@ const labPartnership = {
   ],
   approach: 'Collaborative partnership with deep CAMP & DeFi expertise',
   specializations: [
-    '1B Insurance Fund Management',
+    '$100M Insurance Fund Management',
     'Multi-collateral Strategies',
     'Off-chain Order Optimization',
     'Governance & Risk Management',
@@ -137,7 +137,7 @@ export function CollaborativeLab({ walletAddress, userId }: CollaborativeLabProp
     {
       id: '1',
       type: 'lab',
-      content: `🚀 **Welcome to CAMP Lab - Your DeFi Solutions Partner**\n\nI'm your dedicated collaborative partner with deep expertise in the CAMP ecosystem, DeFi strategies, and the USDca stablecoin protocol.\n\n⚡ **What Makes Me Unique:**\n• **CAMP Expert** - Complete knowledge of USDca, minting, and governance\n• **1B Insurance Fund** - Guidance on leveraging our comprehensive protection\n• **DeFi Strategist** - Multi-collateral optimization (WBTC, USDC, USDT, ETH, WSOL)\n• **Risk Specialist** - Smart contract security and portfolio protection\n• **Solutions Partner** - We build actionable strategies together\n\n🛡️ **Protected by 1 Billion USD Insurance Fund**\nOur ecosystem provides unprecedented security through GOLDBACKBOND-backed insurance covering smart contract risks, oracle failures, and market volatility.\n\n🤝 **Ready to Collaborate?**\nShare your DeFi goals, CAMP questions, or strategic challenges. I'll work directly with you to develop comprehensive, actionable solutions.\n\n*Let's optimize your DeFi journey together.*`,
+      content: `🚀 **Welcome to CAMP Lab - Your DeFi Solutions Partner**\n\nI'm your dedicated collaborative partner with deep expertise in the CAMP ecosystem, DeFi strategies, and the USDca stablecoin protocol.\n\n⚡ **What Makes Me Unique:**\n• **CAMP Expert** - Complete knowledge of USDca, minting, and governance\n• **$100M Insurance Fund** - Guidance on leveraging our comprehensive protection\n• **DeFi Strategist** - Multi-collateral optimization (WBTC, USDC, USDT, ETH, WSOL)\n• **Risk Specialist** - Smart contract security and portfolio protection\n• **Solutions Partner** - We build actionable strategies together\n\n🛡️ **Protected by $100M Insurance Fund**\nOur ecosystem provides unprecedented security through GOLDBACKBOND-backed insurance covering smart contract risks, oracle failures, and market volatility.\n\n🤝 **Ready to Collaborate?**\nShare your DeFi goals, CAMP questions, or strategic challenges. I'll work directly with you to develop comprehensive, actionable solutions.\n\n*Let's optimize your DeFi journey together.*`,
       timestamp: new Date(),
       analysis: {
         riskLevel: 'Low',
@@ -346,7 +346,7 @@ export function CollaborativeLab({ walletAddress, userId }: CollaborativeLabProp
               <p className="text-sm text-camp-silver-400">{labPartnership.title}</p>
               <div className="flex items-center space-x-2 mt-1">
                 <Shield className="w-3 h-3 text-green-400" />
-                <span className="text-xs text-green-300 font-medium">1B Insurance Protected</span>
+                <span className="text-xs text-green-300 font-medium">$100M Insurance Protected</span>
               </div>
             </div>
           </div>
